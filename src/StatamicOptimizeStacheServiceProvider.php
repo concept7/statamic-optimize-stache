@@ -2,9 +2,9 @@
 
 namespace Concept7\StatamicOptimizeStache;
 
+use Concept7\StatamicOptimizeStache\Commands\StatamicOptimizeStacheCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Concept7\StatamicOptimizeStache\Commands\StatamicOptimizeStacheCommand;
 
 class StatamicOptimizeStacheServiceProvider extends PackageServiceProvider
 {

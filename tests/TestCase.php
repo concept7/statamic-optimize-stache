@@ -2,9 +2,9 @@
 
 namespace Concept7\StatamicOptimizeStache\Tests;
 
+use Concept7\StatamicOptimizeStache\StatamicOptimizeStacheServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Concept7\StatamicOptimizeStache\StatamicOptimizeStacheServiceProvider;
 
 class TestCase extends Orchestra
 {

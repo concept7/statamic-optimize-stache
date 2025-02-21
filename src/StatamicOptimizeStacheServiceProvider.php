@@ -12,4 +12,14 @@ class StatamicOptimizeStacheServiceProvider extends PackageServiceProvider
         $package
             ->name('statamic-optimize-stache');
     }
+
+    public function bootingPackage()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->optimizes(
+                optimize: 'statamic:stache:warm',
+                clear: 'statamic:stache:clear',
+            );
+        }
+    }
 }

@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "concept7/statamic-optimize-stache",
+    "description": "Add Stache management to optimize command",
     "keywords": [
-        ":vendor_name",
+        "Concept7",
         "laravel",
-        ":package_slug"
+        "statamic-optimize-stache"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/concept7/statamic-optimize-stache",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Jan Henk Hazelaar",
+            "email": "janhenk@concept7.nl",
             "role": "Developer"
         }
     ],
@@ -30,18 +30,17 @@
         "pestphp/pest-plugin-laravel": "^3.0",
         "phpstan/extension-installer": "^1.3||^2.0",
         "phpstan/phpstan-deprecation-rules": "^1.1||^2.0",
-        "phpstan/phpstan-phpunit": "^1.3||^2.0",
-        "spatie/laravel-ray": "^1.35"
+        "phpstan/phpstan-phpunit": "^1.3||^2.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Concept7\\StatamicOptimizeStache\\": "src/",
+            "Concept7\\StatamicOptimizeStache\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Concept7\\StatamicOptimizeStache\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Concept7\\StatamicOptimizeStache\\StatamicOptimizeStacheServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "StatamicOptimizeStache": "Concept7\\StatamicOptimizeStache\\Facades\\StatamicOptimizeStache"
             }
         }
     },

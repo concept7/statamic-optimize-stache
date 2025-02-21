@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Concept7\StatamicOptimizeStache;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Concept7\StatamicOptimizeStache\Commands\StatamicOptimizeStacheCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class StatamicOptimizeStacheServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('statamic-optimize-stache')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_statamic_optimize_stache_table')
+            ->hasCommand(StatamicOptimizeStacheCommand::class);
     }
 }

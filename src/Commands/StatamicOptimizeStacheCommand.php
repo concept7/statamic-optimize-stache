@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Concept7\StatamicOptimizeStache\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class StatamicOptimizeStacheCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'statamic-optimize-stache';
 
     public $description = 'My command';
 

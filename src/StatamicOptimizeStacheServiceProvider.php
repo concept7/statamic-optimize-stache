@@ -19,6 +19,7 @@ class StatamicOptimizeStacheServiceProvider extends PackageServiceProvider
             $this->optimizes(
                 optimize: 'statamic:stache:warm',
                 clear: 'statamic:stache:clear',
+                key: 'stache'
             );
         }
     }
